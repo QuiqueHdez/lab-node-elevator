@@ -37,7 +37,7 @@ class Elevator {
     for (; i < this.waitingList.length; i++) {
       if (this.waitingList[i].originFloor == this.floor) {
         this.passengers.push(this.waitingList[i])
-        this.requests.push(this.waitingList[i].originFloor);
+        this.requests.push(this.waitingList[i].destinationFloor);
         console.log(this.waitingList[i].name + " has enter the elevator")
         this.waitingList.splice(i, 1);
       }
@@ -74,7 +74,7 @@ class Elevator {
     }
   }
   call(persona) {
-    this.requests.push(persona.originFloor);
+    this.requests.push(persona.destinationFloor);
     this.waitingList.push(persona);
 
 
