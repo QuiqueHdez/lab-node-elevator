@@ -9,4 +9,4 @@ ascensor.call(julia);
 ascensor.call(jaime);
 ascensor.call(perico);
 ascensor.start();
-setTimeout(() => ascensor.stop(), 24000);
+setTimeout(() => ascensor.stop(), 23000);
